@@ -1,0 +1,28 @@
+name: 1-my first worlflows
+on: 
+  workflow_dispatch:
+jobs:
+   my-first-job:
+     name:  my first jobs
+     runs-on:  ubuntu_latest
+     steps:
+      - name: sayhello
+        run: |
+           sleep10
+           echo "sffsrfwcsfsrf"
+      - name: saybye
+        run:  how do you do 
+      - name: step3
+        run: pwd
+    my-second-job:
+      name: my second job   
+      runs-on: ubuntu_latest
+      steps:
+        - name: how do yu do
+          run: |
+           sleep 10
+           echo "how do yu do"       
+                
+
+
+
