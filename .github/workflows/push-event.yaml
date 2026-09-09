@@ -1,0 +1,17 @@
+name: pushevent
+on: 
+  push
+jobs:
+   push-demo-job:
+    runs-on: ubuntu-latest
+    steps:
+       - name: print event details
+         run: |
+          echo "details of my workflow"
+          echo "Event name is : ${{github.event_name}}"
+          echo "Repository name is: ${{github.repository}}"
+          echo  "Branch name is: ${{github.ref_name}}"
+          echo "Actor is :${{github.actor}}"
+          ehho "commit SHA is : ${{github.sha}}"
+         
+
